@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { WishlistContext } from '../WishlistContext';
-import './Wishlist.css';
+import './WishList.css';
 import wishlistVideo from  '../assets/wishlist.mp4'
 
 function Wishlist() {
