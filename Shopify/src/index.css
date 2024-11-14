@@ -217,6 +217,8 @@ p a:hover {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: #222;
+ 
 }
 
 .image-upload {
@@ -228,7 +230,7 @@ p a:hover {
 }
 
 .image-upload button {
-  background-color: #f72585;
+  background-color: #222;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -237,7 +239,7 @@ p a:hover {
 }
 
 .image-upload button:hover {
-  background-color: #fb6f92;
+  background-color: #222;
 }
 
 
@@ -258,7 +260,7 @@ p a:hover {
 
 .profile-details i {
   font-size: 18px;
-  color: #f72585;
+  color: #222;
 }
 
 /* Profile Actions */
@@ -271,7 +273,7 @@ p a:hover {
 .profile-actions button {
   width: 32%;
   padding: 10px;
-  background-color: #f72585;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 5px;
@@ -281,7 +283,7 @@ p a:hover {
 }
 
 .profile-actions button:hover {
-  background-color: #fb6f92;
+  background-color: #666464;
 }
 
 .btn-edit {
