@@ -1,0 +1,453 @@
+.active{
+  color: rgb(59, 175, 59);
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f0ebd8;
+}
+/* ProductGrid.css */
+.product-grid {
+ 
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-between; /* Evenly space items with gaps */
+  padding: 20px;
+  margin: -10px; /* Adjust for gap spacing */
+}
+
+.product-container {
+  flex: 1 1 calc(33.333% - 20px); /* 3 products per row, accounting for spacing */
+  margin: 10px; /* Add margin around each product to create space */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+@media (max-width: 1200px) {
+  .product-container {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex: 1 1 100%; /* 1 item per row on smaller devices */
+  }
+}
+
+/* login page css */
+.login-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/login-bg.webp'); /* Update with the correct image path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; /* Keep it behind other elements */
+  filter: brightness(90%); /* Dim the background for better readability */
+}
+
+.login-container {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  max-width: 700px; /* Adjusted the max-width for the container */
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+}
+
+.login-image-section {
+  overflow: hidden;
+  border-radius: 0;
+  position: relative;
+  height: 500px;
+  
+}
+.login-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.form-section {
+  height: 500px;
+  flex-basis: 60%; /* Both sections take up 50% of the width */
+  background-color: #fefae0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  padding-right: 30px;
+   /* Add padding for a better visual */
+  /* Space between the form and image */
+}
+
+.login-h4 {
+  text-align: center;
+  margin-bottom: 20px;
+ 
+  font-size: 1.5rem; /* Larger font for emphasis */
+  font-weight: bold; /* Make the text bold */
+   /* Make the text italic */
+  letter-spacing: 1px; /* Add a bit of letter spacing */
+   /* Capitalize all letters */
+  background: linear-gradient(90deg, #f72585, #b5179e); /* Gradient color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Only fill the gradient */
+}
+
+.login-input {
+  width: 90%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f72585; /* Match the red button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #fb6f92;
+}
+
+.not-reg {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 16px;
+}
+
+p a {
+  color: #FF6464; /* Match the link color to the button */
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-section, .image-section {
+    flex-basis: 100%; /* Stack sections on top of each other */
+    max-width: 100%;
+  }
+
+  .image-section img {
+    height: 200px;
+  }
+}
+
+/* profile page */
+/* Profile Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-upload {
+  margin-top: 20px;
+}
+
+.image-upload input {
+  margin-bottom: 10px;
+}
+
+.image-upload button {
+  background-color: #f72585;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-upload button:hover {
+  background-color: #fb6f92;
+}
+
+
+/* Profile Details */
+.profile-details {
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+}
+
+.profile-details p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.profile-details i {
+  font-size: 18px;
+  color: #f72585;
+}
+
+/* Profile Actions */
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-actions button {
+  width: 32%;
+  padding: 10px;
+  background-color: #f72585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-actions button:hover {
+  background-color: #fb6f92;
+}
+
+.btn-edit {
+  background-color: #4CAF50; /* Green for edit button */
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+.btn-orders {
+  background-color: #2196F3; /* Blue for orders button */
+}
+
+.btn-orders:hover {
+  background-color: #1976D2;
+}
+
+.btn-wishlist {
+  background-color: #FFC107; /* Amber for wishlist button */
+}
+
+.btn-wishlist:hover {
+  background-color: #FFB300;
+}
+
+/* Loading state */
+.profile-container p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+/* registration css */
+
+.reg-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/login-bg.webp'); /* Update with the correct image path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; /* Keep it behind other elements */
+  filter: brightness(90%); /* Dim the background for better readability */
+}
+
+.registration-container {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.registration-image-section {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 0px;
+  height: 500px;
+}
+
+.registration-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.form-section {
+  width: 50%;
+  background-color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.register-h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  /* Larger font for emphasis */
+  font-weight: 700; /* Make the text bold */
+   /* Make the text italic */
+  letter-spacing: 1px; /* Add a bit of letter spacing */
+   /* Capitalize all letters */
+  background: linear-gradient(90deg, #f72585, #b5179e); /* Gradient color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Only fill the gradient */
+}
+
+
+.register-input{
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-btn {
+  width: 98%;
+  padding: 12px;
+  background-color: #f72585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #fb6f92;
+}
+
+.already-reg {
+  margin-top: 20px;
+  text-align: center;
+}
+
+p a {
+  color: #FF6464;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+  }
+
+  .registration-image-section,
+  .form-section {
+    width: 100%;
+  }
+
+  .registration-image-section img {
+    height: 200px;
+  }
+}

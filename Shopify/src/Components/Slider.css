@@ -1,0 +1,57 @@
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Make children take full height of parent */
+  width: 100%;
+  height: 400px; /* Set the height you want */
+  margin-top: 0px;
+
+
+}
+
+.slider-img-container {
+  width: 60%; /* Image container takes 60% of the width */
+  height: 100%; /* Ensure it takes the full height of the parent */
+  overflow: hidden;
+}
+
+.slider-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* Ensures no border radius is applied */
+}
+
+.deal-text {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+  width: 40%; /* Text container takes 40% of the width */
+  height: 100%; /* Ensure it takes the full height of the parent */
+  background-color: #ff7096;
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+   /* Add some internal spacing */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.deal-text h1 {
+  font-size: 2.5rem; /* Adjust font size as per your design */
+  margin-bottom: 10px; /* Add spacing between heading and the next element */
+}
+
+.deal-text .discount {
+  font-size: 1.8rem; /* Customize the size of the discount text */
+  font-weight: bold;
+  margin-bottom: 5px; /* Add spacing between the discount text and next element */
+}
+
+.deal-text .dis-brands {
+  font-size: 1.2rem; /* Smaller text for brands */
+  font-weight: normal;
+  letter-spacing: 0.05em; /* Adjust spacing between letters */
+}

@@ -1,0 +1,137 @@
+/* Container for each product */
+.product-container {
+  width: 23%; /* Adjust width to fit 4 products in one row */
+  padding-top: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for dark theme */
+  border-radius: 8px;
+  background-color: #2d2d2d; /* Dark background for product container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  height: 430px;
+  position: relative;
+  color: #f8f9fa;
+  /* Light text color for contrast */
+}
+
+.product-container:hover {
+  transform: translateY(-10px);
+}
+
+/* Image container */
+.img-container { 
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  
+}
+
+.img-container img {
+  width: 170px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Icons overlay in dark theme */
+.icons-overlay {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between the icons */
+  margin-top: 6px; /* Space between image and icons */
+}
+
+.icon {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white for dark background */
+  border-radius: 50%;
+  
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Wishlist icon styling */
+.wishlist-icon {
+  font-size: 20px;
+  color: #f4a9a8; /* Soft pink for wishlist icon */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wishlist-active {
+  color: #ff6b6b; /* Red color for active wishlist */
+  border: none; /* Remove border when active */
+}
+
+/* Cart icon styling */
+.cart-icon {
+  color: #f8f9fa; /* Light color for cart icon */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Product description section */
+.description {
+  
+  text-align: center;
+}
+
+/* Brand name styling */
+.Brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e1e1e1; /* Light gray for brand name */
+  margin-bottom: 5px;
+  
+}
+
+/* Product description styling */
+.fabric {
+  font-size: 1rem;
+  color: #b0b0b0; /* Medium gray for fabric description */
+  margin-bottom: 10px;
+}
+
+/* Price, MRP, and discount styling */
+.price-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Price styling */
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold color for price to stand out */
+}
+
+/* MRP styling (crossed-out) */
+.MRP {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* Discount styling */
+.discount {
+  font-size: 1rem;
+  color: #ff6b6b; /* Red color for discount */
+}
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+  .product-container {
+    width: 45%; /* 2 products per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    width: 100%; /* 1 product per row on small screens */
+  }
+}

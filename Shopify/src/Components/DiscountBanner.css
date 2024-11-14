@@ -1,0 +1,81 @@
+.banner-container {
+  width: 100%;
+   /* Light background for the banner */
+   /* Soft shadow for depth */
+  text-align: center; 
+
+}
+
+.banner-heading h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px; /* Space between heading and banner strips */
+  font-weight: bold;
+  padding-top: 10px;
+ 
+}
+
+.banner-strips {
+  display: flex;
+  justify-content: space-between; /* Distribute banner strips evenly */
+  gap: 50px; /* Gap between the banner strips */
+  margin: 25px;
+}
+
+.banner-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(50% - 25px); /* Each banner strip takes 50% of the width, minus half of the gap */
+  background: #2ec4b6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px; /* Light shadow for hover effect */
+}
+
+.coupon-deal {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.coupon-deal p {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.coupon-code {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.coupon-code button {
+  background-color: white;
+  color: #ff6347;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.coupon-code button:hover {
+  background-color: #ff6347;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-strips {
+    flex-direction: column; /* Stack strips vertically on small screens */
+  }
+
+  .banner-strip {
+    width: 100%; /* Each strip takes full width on small screens */
+    margin-bottom: 20px; /* Add margin between strips on smaller devices */
+  }
+}

@@ -1,0 +1,121 @@
+/* Wishlist.css */
+
+/* Basic Styling */
+.wishlist-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+ 
+  margin-top: 50px;
+}
+
+.wishlist-page h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Wishlist Items */
+.wishlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  
+}
+
+.wishlist-item:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.wishlist-item-image img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px; /* Space between image and details */
+}
+
+/* Item Details */
+.wishlist-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between the details */
+  margin: auto;
+
+}
+
+.wishlist-item-details h3 {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.wishlist-item-details p {
+  margin: 0;
+  color: #555;
+}
+
+.wishlist-item-details .price {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.wishlist-item-details .mrp {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.wishlist-item-details .discount {
+  font-size: 0.9rem;
+  color: #e74c3c;
+}
+
+/* Empty Wishlist Message */
+.wishlist-item-actions {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+}
+
+.remove-item {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+  background-color: #c0392b;
+}
+
+/* Empty Wishlist Message */
+.empty-wishlist-message {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+.empty-wishlist-video{
+  width: 400px;
+  
+}
