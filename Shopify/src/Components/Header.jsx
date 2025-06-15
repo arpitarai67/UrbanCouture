@@ -33,7 +33,7 @@ function Header() {
   return (
     <header className="header-container">
       <div className="logo">
-        <a href="#">Shopify</a>
+        <a href="#">Urban Couture</a>
       </div>
 
       <nav>
